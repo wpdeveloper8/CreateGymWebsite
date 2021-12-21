@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gym Static Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://kit.fontawesome.com/a42476606a.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css'  href='style.css'> 
+</head>
+<body>
+    <nav id="nav">
+        <div class="logo"><img src="imges/logo1.png"></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="ourwork.html">Our Work</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+   <div class="content">
+       <h1>Avada Gym</h1>
+       <p>Motivation is what gets you started. Habit is what keeps you going.</p>
+       <button class="btnjoin">Join Us Today</button>
+   </div>
+   <script>
+        $(function(){
+   $('#nav').click(function() {
+     $(this).toggleClass('open');
+   });
+ });
+   </script>
+   <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+</body>
+</html>

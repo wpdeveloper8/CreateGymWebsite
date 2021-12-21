@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+    background-image: url('imges/home-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1050px;
+    position: relative;
+}
+nav{
+    display: flex;
+    height: 90px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px 0px 100px;
+    flex-wrap: wrap;
+}
+nav .logo img{
+    width: 150px;
+    margin-top: 20px;
+    height: 70px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    border-bottom: 1.5px solid transparent;
+    transition: all 3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    border-color: orange;
+    color: orange;
+}
+nav .menu-btn i{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.content{
+    margin-top: 20%;
+    margin-left: 0%;
+    color: orange;
+    transform: translate(-50% -50%);
+}
+.content h1{
+    font-weight: bold;
+    font-size: 140px;
+    font-family: poppins;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10px;
+}
+.content p{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+button.btnjoin {
+    margin-left: 45%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: orange;
+    border: 0px;
+    padding-right: 45px;
+    padding-left: 45px;
+    color: white;
+    font-size: 20px;
+    border-radius: 20%;
+}
+button.btnjoin:hover{
+    background-color: red;
+}
